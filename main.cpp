@@ -150,7 +150,6 @@ void Visualizer() {
                 max_mag[j] = (i == start_pos ? 0.0f : std::max(max_mag[j], magnitude_sum[i % BUFFER_SIZE][j].load()));
             }
         }
-        std::cout << min_mag[0] << " " << max_mag[0] << std::endl;
         for (size_t i = 0; i < MAGNITUDE_COUNT; i++) {
             if (std::clamp((max_mag[i] - min_mag[i]) * visual_coeffs[i] / 10.0f, 0.0f, 40.0f) >= diff_trigger[i]) {
                 switch (i) {

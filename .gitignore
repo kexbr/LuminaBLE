@@ -8,3 +8,4 @@ Makefile
 elk_led
 *.o
 .vscode/
+.clang-format
