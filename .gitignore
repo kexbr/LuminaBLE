@@ -1,0 +1,10 @@
+main2.cpp
+main1.cpp
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+elk_led
+*.o
+.vscode/
